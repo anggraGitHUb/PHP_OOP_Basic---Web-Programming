@@ -1,7 +1,7 @@
 <?php
 
 // Class database (koneksi database)
-class database{
+class Database{
  
     // Property
 	var $host = "localhost";
@@ -10,7 +10,7 @@ class database{
 	var $db = "learn_smkn4";
     var $connection;
 
-    // Method 
+    // Method koneksi kedalam database
 	function Connect(){
 		$this->connection=mysqli_connect($this->host, $this->uname, $this->pass,$this->db);
         return $this->connection;
